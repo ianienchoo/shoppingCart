@@ -8,13 +8,50 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
-    
+
+  <h1>Shopping Cart</h1>
+
+  <table>
+    <tbody id="item-list">
+      <tr>
+        <td class="item">Salmon</td>
+        <td class="price">$60.00</td>
+        <td class="quantity">
+          <label>QTY</label>
+          <input type="text" value="0">
+          <button>cancel</button>
+        </td>
+        <td class="subtotal">$0.00</td>
+      </tr>
+      <tr>
+        <td class="item">Tuna</td>
+        <td class="price">$50.00</td>
+        <td class="quantity">
+          <label>QTY</label>
+          <input type="text" value="0">
+          <button>cancel</button>
+        </td>
+        <td class="subtotal">$0.00</td>
+      </tr>
+    </tbody>
+    <tfooter>
+      <td><input type="text" id="add-item"></td>
+      <td><input type="text" id="add-price"></td>
+      <td><button id="create-item">Create</button></td>
+    </tfooter>
+  </table>
+  <button id="calculate">Calculate Prices</button>
+  <br>
+  <h1>Total Price:
+    <br><span id="total">$0.00</span>
+  </h1>
+
   </body>
 </html>

@@ -1,0 +1,15 @@
+body {
+	padding: 50px;
+}
+
+td {
+	width: 300px;
+}
+
+#calculate {
+	position: absolute;
+	right: 200px;
+	background-color: #64D228;
+	color: #FFFFFF;
+
+}
